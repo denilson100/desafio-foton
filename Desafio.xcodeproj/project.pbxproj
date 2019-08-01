@@ -15,6 +15,7 @@
 		8F4FE67C22F387F30062288D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE67A22F387F30062288D /* LaunchScreen.storyboard */; };
 		8F4FE68422F389280062288D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE68322F389280062288D /* RoundButton.swift */; };
 		8F4FE68622F3896B0062288D /* LoginInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE68522F3896B0062288D /* LoginInViewController.swift */; };
+		8F4FE68822F38B010062288D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE68722F38B010062288D /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		8F4FE67D22F387F30062288D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F4FE68322F389280062288D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8F4FE68522F3896B0062288D /* LoginInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInViewController.swift; sourceTree = "<group>"; };
+		8F4FE68722F38B010062288D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +62,10 @@
 		8F4FE66E22F387F10062288D /* Desafio */ = {
 			isa = PBXGroup;
 			children = (
+				8F4FE68922F38B110062288D /* Login */,
 				8F4FE66F22F387F10062288D /* AppDelegate.swift */,
 				8F4FE67122F387F10062288D /* SceneDelegate.swift */,
 				8F4FE67322F387F10062288D /* ViewController.swift */,
-				8F4FE68522F3896B0062288D /* LoginInViewController.swift */,
 				8F4FE68322F389280062288D /* RoundButton.swift */,
 				8F4FE67522F387F10062288D /* Main.storyboard */,
 				8F4FE67822F387F30062288D /* Assets.xcassets */,
@@ -71,6 +73,15 @@
 				8F4FE67D22F387F30062288D /* Info.plist */,
 			);
 			path = Desafio;
+			sourceTree = "<group>";
+		};
+		8F4FE68922F38B110062288D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8F4FE68522F3896B0062288D /* LoginInViewController.swift */,
+				8F4FE68722F38B010062288D /* SignUpViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4FE68822F38B010062288D /* SignUpViewController.swift in Sources */,
 				8F4FE68422F389280062288D /* RoundButton.swift in Sources */,
 				8F4FE67422F387F10062288D /* ViewController.swift in Sources */,
 				8F4FE67022F387F10062288D /* AppDelegate.swift in Sources */,
