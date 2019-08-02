@@ -12,9 +12,9 @@ protocol ImagePickerPhotoSelected {
     func imagePickerPhotoSelected(_ photo: UIImage)
 }
 
-enum MenuOpcoes {
+enum MenuOptions {
     case camera
-    case biblioteca
+    case library
 }
 
 class ImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -28,15 +28,15 @@ class ImagePicker: NSObject, UIImagePickerControllerDelegate, UINavigationContro
         picker.dismiss(animated: true, completion: nil)
     }
     
-    func menuDeOpcoes(complition:@escaping(_ opcao: MenuOpcoes) -> Void) -> UIAlertController {
+    func menuDeOpcoes(complition:@escaping(_ opcao: MenuOptions) -> Void) -> UIAlertController {
         let menu = UIAlertController(title: "Atenção", message: "escolha uma opção", preferredStyle: .actionSheet)
-        let camera = UIAlertAction(title: "tirar foto", style: .default) { (acao) in
+        let camera = UIAlertAction(title: "Câmera", style: .default) { (acao) in
             complition(.camera)
         }
         menu.addAction(camera)
             
-        let biblioteca = UIAlertAction(title: "biblioteca", style: .default) { (acao) in
-            complition(.biblioteca)
+        let biblioteca = UIAlertAction(title: "Biblioteca", style: .default) { (acao) in
+            complition(.library)
         }
         menu.addAction(biblioteca)
             

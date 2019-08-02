@@ -15,20 +15,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lad-32-bNM">
-                                <rect key="frame" x="174" y="579" width="67" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Tirar Foto"/>
-                                <connections>
-                                    <action selector="buttonGetPhoto:" destination="iyF-JL-7NO" eventType="touchUpInside" id="atJ-Z2-jsI"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UeJ-uq-7BJ">
-                                <rect key="frame" x="87" y="246" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="UeJ-uq-7BJ">
+                                <rect key="frame" x="107" y="108" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HBT-Gf-dOQ"/>
+                                    <constraint firstAttribute="height" constant="200" id="O62-sA-Foz"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toque na imagem e selecione uma foto para seu perfil." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBc-TO-Tuv">
+                                <rect key="frame" x="8" y="328" width="398" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JsZ-pk-n4u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dBc-TO-Tuv" firstAttribute="top" secondItem="UeJ-uq-7BJ" secondAttribute="bottom" constant="20" id="2U2-I5-T6O"/>
+                            <constraint firstAttribute="trailing" secondItem="dBc-TO-Tuv" secondAttribute="trailing" constant="8" id="LkN-eH-GMd"/>
+                            <constraint firstItem="dBc-TO-Tuv" firstAttribute="leading" secondItem="Dap-zz-kyS" secondAttribute="leading" constant="8" id="c0a-pu-c5k"/>
+                            <constraint firstItem="UeJ-uq-7BJ" firstAttribute="centerX" secondItem="BR4-1X-gH1" secondAttribute="centerX" id="gw4-MO-bPh"/>
+                            <constraint firstItem="UeJ-uq-7BJ" firstAttribute="top" secondItem="Dap-zz-kyS" secondAttribute="top" constant="20" id="jpX-He-0X3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dap-zz-kyS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="cAF-Yb-vqF">
@@ -44,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztv-AD-eTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-51" y="-589"/>
+            <point key="canvasLocation" x="-52.173913043478265" y="-589.28571428571422"/>
         </scene>
         <!--Login-->
         <scene sceneID="uvs-tU-SXr">
@@ -226,8 +237,8 @@
             <objects>
                 <navigationController storyboardIdentifier="navigation" automaticallyAdjustsScrollViewInsets="NO" id="6be-VR-IgQ" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="bPh-bH-XmP">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bPh-bH-XmP">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -240,4 +251,7 @@
             <point key="canvasLocation" x="-1010" y="-589"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="user" width="512" height="512"/>
+    </resources>
 </document>

@@ -10,6 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController, ImagePickerPhotoSelected {
     
+    // MARK: - Outlets
+    
     @IBOutlet weak var imgUser: UIImageView!
     
     
@@ -24,6 +26,8 @@ class HomeViewController: UIViewController, ImagePickerPhotoSelected {
         print("\(email)")
         imagePicker.delegate = self
         
+        setupImage()
+        
     }
 
     // MARK: - Actions
@@ -34,7 +38,7 @@ class HomeViewController: UIViewController, ImagePickerPhotoSelected {
         UIApplication.shared.keyWindow?.rootViewController = navigation
     }
     
-    @IBAction func buttonGetPhoto(_ sender: UIButton) {
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         let menu = ImagePicker().menuDeOpcoes { (opcao) in
             self.mostrarMultimidia(opcao)
         }
@@ -43,12 +47,23 @@ class HomeViewController: UIViewController, ImagePickerPhotoSelected {
     
     // MARK: - Methods
     
-    func mostrarMultimidia(_ opcao: MenuOpcoes) {
+    func setupImage() {
+        // Arrendondar
+        imgUser.layer.cornerRadius = imgUser.frame.width / 2
+        imgUser.layer.masksToBounds = true
         
+        // Ação do click
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+        imgUser.isUserInteractionEnabled = true
+        imgUser.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    
+    func mostrarMultimidia(_ option: MenuOptions) {
         let multimidia = UIImagePickerController()
         multimidia.delegate = imagePicker
         
-        if opcao == .camera && UIImagePickerController.isSourceTypeAvailable(.camera) {
+        if option == .camera && UIImagePickerController.isSourceTypeAvailable(.camera) {
             multimidia.sourceType = .camera
         } else {
             multimidia.sourceType = .photoLibrary
