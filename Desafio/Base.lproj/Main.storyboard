@@ -22,10 +22,20 @@
                                     <constraint firstAttribute="height" constant="200" id="O62-sA-Foz"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email@email.com.br" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W40-Xi-Vlm">
+                                <rect key="frame" x="20" y="328" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="fIn-rb-zSx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toque na imagem e selecione uma foto para seu perfil." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBc-TO-Tuv">
-                                <rect key="frame" x="8" y="328" width="398" height="50"/>
+                                <rect key="frame" x="8" y="370" width="398" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="JsZ-pk-n4u"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="irG-Gt-dgy"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -34,11 +44,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="dBc-TO-Tuv" firstAttribute="top" secondItem="UeJ-uq-7BJ" secondAttribute="bottom" constant="20" id="2U2-I5-T6O"/>
+                            <constraint firstItem="W40-Xi-Vlm" firstAttribute="top" secondItem="UeJ-uq-7BJ" secondAttribute="bottom" constant="20" id="8Ic-Ar-h70"/>
+                            <constraint firstItem="Dap-zz-kyS" firstAttribute="trailing" secondItem="dBc-TO-Tuv" secondAttribute="trailing" constant="8" id="Duw-j2-q9X"/>
+                            <constraint firstItem="W40-Xi-Vlm" firstAttribute="leading" secondItem="Dap-zz-kyS" secondAttribute="leading" constant="20" id="EaW-Ow-Gw2"/>
                             <constraint firstAttribute="trailing" secondItem="dBc-TO-Tuv" secondAttribute="trailing" constant="8" id="LkN-eH-GMd"/>
+                            <constraint firstItem="dBc-TO-Tuv" firstAttribute="leading" secondItem="Dap-zz-kyS" secondAttribute="leading" constant="8" id="Noa-TS-ecp"/>
                             <constraint firstItem="dBc-TO-Tuv" firstAttribute="leading" secondItem="Dap-zz-kyS" secondAttribute="leading" constant="8" id="c0a-pu-c5k"/>
+                            <constraint firstItem="Dap-zz-kyS" firstAttribute="trailing" secondItem="W40-Xi-Vlm" secondAttribute="trailing" constant="20" id="dIt-la-5Gm"/>
                             <constraint firstItem="UeJ-uq-7BJ" firstAttribute="centerX" secondItem="BR4-1X-gH1" secondAttribute="centerX" id="gw4-MO-bPh"/>
                             <constraint firstItem="UeJ-uq-7BJ" firstAttribute="top" secondItem="Dap-zz-kyS" secondAttribute="top" constant="20" id="jpX-He-0X3"/>
+                            <constraint firstItem="dBc-TO-Tuv" firstAttribute="top" secondItem="W40-Xi-Vlm" secondAttribute="bottom" constant="8" id="wEN-Fs-ulp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dap-zz-kyS"/>
                     </view>
@@ -51,6 +66,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="imgUser" destination="UeJ-uq-7BJ" id="ge5-oh-9Zm"/>
+                        <outlet property="lbUserEmail" destination="W40-Xi-Vlm" id="1o5-HN-M0g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ztv-AD-eTt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -73,7 +89,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GhS-gI-KG8">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha (minimo 6 caracteres)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GhS-gI-KG8">
                                         <rect key="frame" x="0.0" y="57.5" width="374" height="47.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
@@ -161,7 +177,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xqr-IC-lWX">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha (minimo 6 caracteres)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xqr-IC-lWX">
                                         <rect key="frame" x="0.0" y="75.5" width="374" height="49"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>

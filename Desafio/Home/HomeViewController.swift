@@ -13,6 +13,7 @@ class HomeViewController: UIViewController, ImagePickerPhotoSelected {
     // MARK: - Outlets
     
     @IBOutlet weak var imgUser: UIImageView!
+    @IBOutlet weak var lbUserEmail: UILabel!
     
     
     // MARK: - Variaveis
@@ -23,9 +24,9 @@ class HomeViewController: UIViewController, ImagePickerPhotoSelected {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("\(email)")
         imagePicker.delegate = self
         
+        setupEmail()
         setupImage()
         
     }
@@ -33,6 +34,7 @@ class HomeViewController: UIViewController, ImagePickerPhotoSelected {
     // MARK: - Actions
     
     @IBAction func buttonLogout(_ sender: Any) {
+        UserDefaults.standard.set("", forKey: "userEmail")
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let navigation = storyboard.instantiateViewController(withIdentifier: "navigation-login") as! UINavigationController
         UIApplication.shared.keyWindow?.rootViewController = navigation
@@ -56,6 +58,15 @@ class HomeViewController: UIViewController, ImagePickerPhotoSelected {
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imgUser.isUserInteractionEnabled = true
         imgUser.addGestureRecognizer(tapGestureRecognizer)
+    }
+    
+    func setupEmail() {
+        let userEmail = UserDefaults.standard.string(forKey: "userEmail") ?? ""
+        if !userEmail.isEmpty {
+            lbUserEmail.text = userEmail
+        } else {
+            lbUserEmail.isHidden = true
+        }
     }
     
     

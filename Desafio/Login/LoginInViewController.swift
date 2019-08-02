@@ -47,6 +47,7 @@ class LoginInViewController: UIViewController {
     func verifyUser(email: String, password: String) {
         let isLogged = User(email, password).login()
         if isLogged {
+            UserDefaults.standard.set(email, forKey: "userEmail")
             sigIn()
         } else {
             let alert = Notification().show(title: "Ops! Algo errado.", message: "Usuário ou senha incorretos.")
