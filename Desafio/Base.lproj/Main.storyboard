@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6be-VR-IgQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14845" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fyQ-PR-0C3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14799.2"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -28,7 +29,7 @@
                                     <constraint firstAttribute="height" constant="34" id="fIn-rb-zSx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toque na imagem e selecione uma foto para seu perfil." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBc-TO-Tuv">
@@ -59,6 +60,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="cAF-Yb-vqF">
                         <barButtonItem key="rightBarButtonItem" title="SAIR" id="yJE-QZ-yhn">
+                            <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="buttonLogout:" destination="iyF-JL-7NO" id="eTY-bI-Meq"/>
                             </connections>
@@ -82,22 +84,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hvb-FR-pob">
-                                <rect key="frame" x="20" y="160" width="374" height="220"/>
+                                <rect key="frame" x="20" y="160" width="374" height="270"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NrZ-8F-mbM">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="47.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha (minimo 6 caracteres)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GhS-gI-KG8">
-                                        <rect key="frame" x="0.0" y="57.5" width="374" height="47.5"/>
+                                        <rect key="frame" x="0.0" y="70" width="374" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1X-Rj-nJ7" customClass="RoundButton" customModule="Desafio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="115" width="374" height="47.5"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="140" width="374" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="ENTRAR">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -111,38 +113,38 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTN-Kx-3Ok">
-                                        <rect key="frame" x="0.0" y="172.5" width="374" height="47.5"/>
-                                        <state key="normal" title="CRIAR UMA CONTA"/>
+                                        <rect key="frame" x="0.0" y="210" width="374" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="CRIAR UMA CONTA">
+                                            <color key="titleColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                         <connections>
                                             <segue destination="xJU-Ob-4te" kind="show" id="plF-px-Dlu"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="w1X-Rj-nJ7" secondAttribute="trailing" id="1kb-gB-Ri4"/>
-                                    <constraint firstAttribute="trailing" secondItem="mTN-Kx-3Ok" secondAttribute="trailing" id="H8q-Fr-FfI"/>
-                                    <constraint firstAttribute="height" constant="220" id="QNo-5g-FQA"/>
-                                    <constraint firstItem="w1X-Rj-nJ7" firstAttribute="leading" secondItem="hvb-FR-pob" secondAttribute="leading" id="Qjo-S6-flf"/>
-                                    <constraint firstItem="mTN-Kx-3Ok" firstAttribute="leading" secondItem="hvb-FR-pob" secondAttribute="leading" id="Scx-6S-KUe"/>
-                                    <constraint firstAttribute="trailing" secondItem="NrZ-8F-mbM" secondAttribute="trailing" id="Tqy-oF-yRi"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="220" id="TxC-Q4-mKl"/>
-                                    <constraint firstAttribute="trailing" secondItem="GhS-gI-KG8" secondAttribute="trailing" id="cfR-Pi-zdV"/>
-                                    <constraint firstItem="NrZ-8F-mbM" firstAttribute="leading" secondItem="hvb-FR-pob" secondAttribute="leading" id="s8U-pb-kmG"/>
-                                    <constraint firstItem="GhS-gI-KG8" firstAttribute="leading" secondItem="hvb-FR-pob" secondAttribute="leading" id="tsU-Q7-bgT"/>
+                                    <constraint firstItem="NrZ-8F-mbM" firstAttribute="leading" secondItem="hvb-FR-pob" secondAttribute="leading" id="1fZ-fJ-YHK"/>
+                                    <constraint firstAttribute="height" constant="270" id="BgV-D7-hqm"/>
+                                    <constraint firstItem="w1X-Rj-nJ7" firstAttribute="leading" secondItem="hvb-FR-pob" secondAttribute="leading" id="N9F-xq-MPy"/>
+                                    <constraint firstAttribute="trailing" secondItem="mTN-Kx-3Ok" secondAttribute="trailing" id="Ncg-Mm-ndP"/>
+                                    <constraint firstAttribute="trailing" secondItem="NrZ-8F-mbM" secondAttribute="trailing" id="dFj-iv-SsX"/>
+                                    <constraint firstAttribute="trailing" secondItem="GhS-gI-KG8" secondAttribute="trailing" id="eUn-Up-ptk"/>
+                                    <constraint firstItem="GhS-gI-KG8" firstAttribute="leading" secondItem="hvb-FR-pob" secondAttribute="leading" id="esE-mZ-pgh"/>
+                                    <constraint firstItem="mTN-Kx-3Ok" firstAttribute="leading" secondItem="hvb-FR-pob" secondAttribute="leading" id="hQp-8e-VKh"/>
+                                    <constraint firstAttribute="trailing" secondItem="w1X-Rj-nJ7" secondAttribute="trailing" id="zVP-cl-Cvt"/>
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hvb-FR-pob" firstAttribute="leading" secondItem="IB1-JY-xDN" secondAttribute="leading" constant="20" id="6pU-qa-ISO"/>
-                            <constraint firstItem="IB1-JY-xDN" firstAttribute="trailing" secondItem="hvb-FR-pob" secondAttribute="trailing" constant="20" id="BCV-D1-mRU"/>
-                            <constraint firstItem="hvb-FR-pob" firstAttribute="top" secondItem="IB1-JY-xDN" secondAttribute="top" constant="20" id="V4d-O6-8ny"/>
-                            <constraint firstItem="IB1-JY-xDN" firstAttribute="trailing" secondItem="hvb-FR-pob" secondAttribute="trailing" constant="20" id="tBL-aK-KmS"/>
-                            <constraint firstItem="hvb-FR-pob" firstAttribute="leading" secondItem="IB1-JY-xDN" secondAttribute="leading" constant="20" id="yS1-F7-BiB"/>
+                            <constraint firstItem="hvb-FR-pob" firstAttribute="leading" secondItem="IB1-JY-xDN" secondAttribute="leading" constant="20" id="494-HN-Y1L"/>
+                            <constraint firstItem="hvb-FR-pob" firstAttribute="top" secondItem="IB1-JY-xDN" secondAttribute="top" constant="20" id="QfW-qu-RVH"/>
+                            <constraint firstItem="IB1-JY-xDN" firstAttribute="trailing" secondItem="hvb-FR-pob" secondAttribute="trailing" constant="20" id="mn8-Ih-pMU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IB1-JY-xDN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="XFO-rC-qCL"/>
+                    <navigationItem key="navigationItem" title="Login" largeTitleDisplayMode="always" id="XFO-rC-qCL"/>
                     <connections>
                         <outlet property="tfEmail" destination="NrZ-8F-mbM" id="8Jq-io-zcZ"/>
                         <outlet property="tfPassword" destination="GhS-gI-KG8" id="TLd-CP-vqZ"/>
@@ -152,7 +154,7 @@
             </objects>
             <point key="canvasLocation" x="-10" y="110"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Nova Conta-->
         <scene sceneID="fWS-qJ-zj0">
             <objects>
                 <viewController id="xJU-Ob-4te" customClass="SignUpViewController" customModule="Desafio" customModuleProvider="target" sceneMemberID="viewController">
@@ -160,32 +162,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnJ-0N-306">
-                                <rect key="frame" x="0.0" y="45" width="414" height="44"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="naR-Qi-kTq"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="CRIAR CONTA" id="b2O-3N-7Ts"/>
-                                </items>
-                            </navigationBar>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="n7k-GL-qoO">
-                                <rect key="frame" x="20" y="109" width="374" height="200"/>
+                                <rect key="frame" x="20" y="160" width="374" height="230"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Eq7-Qr-rSK">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="49.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="59.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha (minimo 6 caracteres)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xqr-IC-lWX">
-                                        <rect key="frame" x="0.0" y="75.5" width="374" height="49"/>
+                                        <rect key="frame" x="0.0" y="85.5" width="374" height="59"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkt-cs-qUN" customClass="RoundButton" customModule="Desafio" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="150.5" width="374" height="49.5"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <rect key="frame" x="0.0" y="170.5" width="374" height="59.5"/>
+                                        <color key="backgroundColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <state key="normal" title="CRIAR">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -200,27 +193,26 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Pkt-cs-qUN" secondAttribute="trailing" id="6rH-AT-peP"/>
-                                    <constraint firstItem="Xqr-IC-lWX" firstAttribute="leading" secondItem="n7k-GL-qoO" secondAttribute="leading" id="8hk-BW-pXx"/>
-                                    <constraint firstAttribute="height" constant="200" id="Hib-bZ-8rS"/>
-                                    <constraint firstItem="Pkt-cs-qUN" firstAttribute="leading" secondItem="n7k-GL-qoO" secondAttribute="leading" id="Po7-1M-A0l"/>
-                                    <constraint firstAttribute="trailing" secondItem="Xqr-IC-lWX" secondAttribute="trailing" id="aG9-mK-Vnb"/>
-                                    <constraint firstItem="Eq7-Qr-rSK" firstAttribute="leading" secondItem="n7k-GL-qoO" secondAttribute="leading" id="fb4-IH-Rig"/>
-                                    <constraint firstAttribute="trailing" secondItem="Eq7-Qr-rSK" secondAttribute="trailing" id="o5n-h7-VoL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pkt-cs-qUN" secondAttribute="trailing" id="K3X-mo-1hK"/>
+                                    <constraint firstItem="Eq7-Qr-rSK" firstAttribute="leading" secondItem="n7k-GL-qoO" secondAttribute="leading" id="VOg-zZ-UHW"/>
+                                    <constraint firstItem="Pkt-cs-qUN" firstAttribute="leading" secondItem="n7k-GL-qoO" secondAttribute="leading" id="WCy-7v-9BM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xqr-IC-lWX" secondAttribute="trailing" id="YrR-Fh-d8h"/>
+                                    <constraint firstItem="Xqr-IC-lWX" firstAttribute="leading" secondItem="n7k-GL-qoO" secondAttribute="leading" id="mIi-97-UAL"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eq7-Qr-rSK" secondAttribute="trailing" id="p5m-dI-b4L"/>
+                                    <constraint firstAttribute="height" constant="230" id="qU2-pc-NlK"/>
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="n7k-GL-qoO" firstAttribute="top" secondItem="tnJ-0N-306" secondAttribute="bottom" constant="20" id="6GV-Yf-9HM"/>
-                            <constraint firstItem="bw3-wh-b9S" firstAttribute="trailing" secondItem="n7k-GL-qoO" secondAttribute="trailing" constant="20" id="BJL-Eb-gUY"/>
-                            <constraint firstItem="tnJ-0N-306" firstAttribute="top" secondItem="9up-0X-aTa" secondAttribute="topMargin" constant="-95" id="HAD-c4-JA2"/>
-                            <constraint firstItem="tnJ-0N-306" firstAttribute="centerX" secondItem="n7k-GL-qoO" secondAttribute="centerX" id="KSQ-9n-uIW"/>
-                            <constraint firstItem="tnJ-0N-306" firstAttribute="leading" secondItem="9up-0X-aTa" secondAttribute="leadingMargin" constant="-20" id="fzJ-Rd-ds3"/>
-                            <constraint firstItem="n7k-GL-qoO" firstAttribute="leading" secondItem="bw3-wh-b9S" secondAttribute="leading" constant="20" id="sd4-da-jy4"/>
+                            <constraint firstItem="bw3-wh-b9S" firstAttribute="trailing" secondItem="n7k-GL-qoO" secondAttribute="trailing" constant="20" id="9x0-tQ-SUZ"/>
+                            <constraint firstItem="n7k-GL-qoO" firstAttribute="top" secondItem="bw3-wh-b9S" secondAttribute="top" constant="20" id="YeU-rX-Quw"/>
+                            <constraint firstItem="n7k-GL-qoO" firstAttribute="leading" secondItem="bw3-wh-b9S" secondAttribute="leading" constant="20" id="Z6E-Am-FFR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bw3-wh-b9S"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Nova Conta" id="5rw-YL-qDe"/>
                     <connections>
                         <outlet property="tfEmail" destination="Eq7-Qr-rSK" id="HO8-GG-3vi"/>
                         <outlet property="tfPassword" destination="Xqr-IC-lWX" id="roO-C0-9Y5"/>
@@ -238,6 +230,13 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="IrS-9M-i9s">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" red="0.0" green="0.32852089410000002" blue="0.57488495110000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
