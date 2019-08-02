@@ -8,19 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		8F4FE67022F387F10062288D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE66F22F387F10062288D /* AppDelegate.swift */; };
-		8F4FE67222F387F10062288D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE67122F387F10062288D /* SceneDelegate.swift */; };
 		8F4FE67422F387F10062288D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE67322F387F10062288D /* ViewController.swift */; };
 		8F4FE67722F387F10062288D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE67522F387F10062288D /* Main.storyboard */; };
 		8F4FE67922F387F30062288D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE67822F387F30062288D /* Assets.xcassets */; };
 		8F4FE67C22F387F30062288D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F4FE67A22F387F30062288D /* LaunchScreen.storyboard */; };
 		8F4FE68422F389280062288D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE68322F389280062288D /* RoundButton.swift */; };
 		8F4FE68622F3896B0062288D /* LoginInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE68522F3896B0062288D /* LoginInViewController.swift */; };
+		8F4FE68822F38B010062288D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE68722F38B010062288D /* SignUpViewController.swift */; };
+		8F4FE68B22F398020062288D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4FE68A22F398020062288D /* User.swift */; };
+		8FC1618022F4513A00AD6120 /* Validate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1617F22F4513A00AD6120 /* Validate.swift */; };
+		8FC1618322F460FF00AD6120 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1618222F460FF00AD6120 /* ImagePicker.swift */; };
+		8FC1618522F467E500AD6120 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC1618422F467E500AD6120 /* SceneDelegate.swift */; };
+		8FD9D0C322F3A1CE00E44B7A /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9D0C222F3A1CE00E44B7A /* Notification.swift */; };
+		8FD9D0C522F3AD4200E44B7A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FD9D0C422F3AD4200E44B7A /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8F4FE66C22F387F10062288D /* Desafio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Desafio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4FE66F22F387F10062288D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8F4FE67122F387F10062288D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8F4FE67322F387F10062288D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8F4FE67622F387F10062288D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8F4FE67822F387F30062288D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -28,6 +33,13 @@
 		8F4FE67D22F387F30062288D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F4FE68322F389280062288D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		8F4FE68522F3896B0062288D /* LoginInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInViewController.swift; sourceTree = "<group>"; };
+		8F4FE68722F38B010062288D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8F4FE68A22F398020062288D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		8FC1617F22F4513A00AD6120 /* Validate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validate.swift; sourceTree = "<group>"; };
+		8FC1618222F460FF00AD6120 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8FC1618422F467E500AD6120 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8FD9D0C222F3A1CE00E44B7A /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		8FD9D0C422F3AD4200E44B7A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,17 +72,47 @@
 		8F4FE66E22F387F10062288D /* Desafio */ = {
 			isa = PBXGroup;
 			children = (
+				8FC1618422F467E500AD6120 /* SceneDelegate.swift */,
+				8FC1618122F45C9100AD6120 /* Home */,
+				8F4FE68922F38B110062288D /* Login */,
+				8FD9D0C122F3A1A800E44B7A /* Components */,
 				8F4FE66F22F387F10062288D /* AppDelegate.swift */,
-				8F4FE67122F387F10062288D /* SceneDelegate.swift */,
 				8F4FE67322F387F10062288D /* ViewController.swift */,
-				8F4FE68522F3896B0062288D /* LoginInViewController.swift */,
-				8F4FE68322F389280062288D /* RoundButton.swift */,
 				8F4FE67522F387F10062288D /* Main.storyboard */,
 				8F4FE67822F387F30062288D /* Assets.xcassets */,
 				8F4FE67A22F387F30062288D /* LaunchScreen.storyboard */,
 				8F4FE67D22F387F30062288D /* Info.plist */,
 			);
 			path = Desafio;
+			sourceTree = "<group>";
+		};
+		8F4FE68922F38B110062288D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8F4FE68522F3896B0062288D /* LoginInViewController.swift */,
+				8F4FE68722F38B010062288D /* SignUpViewController.swift */,
+				8F4FE68A22F398020062288D /* User.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8FC1618122F45C9100AD6120 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8FD9D0C422F3AD4200E44B7A /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8FD9D0C122F3A1A800E44B7A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8FD9D0C222F3A1CE00E44B7A /* Notification.swift */,
+				8FC1617F22F4513A00AD6120 /* Validate.swift */,
+				8F4FE68322F389280062288D /* RoundButton.swift */,
+				8FC1618222F460FF00AD6120 /* ImagePicker.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,11 +186,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F4FE68822F38B010062288D /* SignUpViewController.swift in Sources */,
 				8F4FE68422F389280062288D /* RoundButton.swift in Sources */,
 				8F4FE67422F387F10062288D /* ViewController.swift in Sources */,
+				8FC1618022F4513A00AD6120 /* Validate.swift in Sources */,
 				8F4FE67022F387F10062288D /* AppDelegate.swift in Sources */,
+				8FD9D0C322F3A1CE00E44B7A /* Notification.swift in Sources */,
+				8FD9D0C522F3AD4200E44B7A /* HomeViewController.swift in Sources */,
+				8FC1618522F467E500AD6120 /* SceneDelegate.swift in Sources */,
+				8FC1618322F460FF00AD6120 /* ImagePicker.swift in Sources */,
 				8F4FE68622F3896B0062288D /* LoginInViewController.swift in Sources */,
-				8F4FE67222F387F10062288D /* SceneDelegate.swift in Sources */,
+				8F4FE68B22F398020062288D /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +341,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZB3G4B4252;
 				INFOPLIST_FILE = Desafio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +360,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZB3G4B4252;
 				INFOPLIST_FILE = Desafio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
